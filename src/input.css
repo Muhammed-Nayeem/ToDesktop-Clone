@@ -18,4 +18,13 @@
   .section-wrapper {
     @apply py-20 top-[72px] relative from-gray-200 via-purple-100 to-transparent overflow-x-hidden overflow-y-clip;
   }
+  ::-webkit-scrollbar {
+    @apply w-2.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-["#f1f1f1"];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary h-[100px];
+  }
 }
