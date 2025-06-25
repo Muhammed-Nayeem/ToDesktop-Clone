@@ -1,0 +1,30 @@
+{
+  "name": "todesktop-landingpage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammed-Nayeem/ToDesktop-Clone.git"
+  },
+  "keywords": [
+    "HTML5",
+    "Tailwind CSS v4.1",
+    "Landing Page Design",
+    "ToDesktop Clone"
+  ],
+  "author": "Muhammed Nayeem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhammed-Nayeem/ToDesktop-Clone/issues"
+  },
+  "homepage": "https://github.com/Muhammed-Nayeem/ToDesktop-Clone#readme",
+  "description": "This is a ToDesktop Website clone of landing page based Tailwind CSS V4.1",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}

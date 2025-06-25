@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>ToDesktop - Web app to desktop app in minutes</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Images/asset 0.png" type="image/x-icon" />
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="./all.min.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header id="header" class="fixed top-0 left-0 right-0 w-full z-50 bg-headerBG">
+      <div class="container max-w-screen-xl mx-auto">
+        <nav id="navbar" class="px-3 py-3 flex justify-between items-center">
+          <!-- brand -->
+          <a href="#" class="flex items-center gap-2 flex-1">
+            <img class="max-w-12 max-h-12 object-cover" src="./Assets/Images/asset 0.png" alt="brand"/>
+            <span class="text-lg font-semibold">ToDesktop</span>
+          </a>
+          <!-- nav links -->
+          <ul class="hidden lg:flex items-center space-x-8">
+            <li>
+              <a class="text-lg font-medium hover:text-navLinkHover" href="#">Pricing</a>
+            </li>
+            <li>
+              <a class="text-lg font-medium hover:text-navLinkHover" href="#">Docs</a>
+            </li>
+            <li>
+              <a class="text-lg font-medium hover:text-navLinkHover" href="#">Changelog</a>
+            </li>
+            <li>
+              <a class="text-lg font-medium hover:text-navLinkHover" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="text-lg font-medium hover:text-navLinkHover" href="#">Login</a>
+            </li>
+          </ul>
+          <!-- developers button -->
+          <div class="hidden lg:flex flex-1 justify-end">
+            <button class="px-4 py-1.5 border border-gray-300 cursor-pointer hover:border-gray-500 transition rounded-lg text-base flex items-center gap-2">
+              <img src="./Assets/Images/asset 1.svg" alt="dev-icon" />
+              <span class="font-semibold text-headline">Electron Developer</span>
+              <i class="fa-solid fa-arrow-right text-gray-400"></i>
+            </button>
+          </div>
+          <!-- menu icon button -->
+          <button class="text-lg font-medium cursor-pointer lg:hidden" onclick="handleMobileMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+          </button>
+        </nav>
+        <!-- mobile responsive navbar -->
+        <div id="navbar-dialog" class="px-3 py-3 fixed inset-0 bg-white z-10 hidden lg:hidden">
+          <div id="mobile-navbar" class="flex justify-between items-center">
+            <!-- brand -->
+            <a href="#" class="flex items-center gap-2">
+              <img class="max-w-12 max-h-12 object-cover" src="./Assets/Images/asset 0.png" alt="brand"/>
+              <span class="text-lg font-semibold">ToDesktop</span>
+            </a>
+            <!-- menu close icon button -->
+            <button class="text-lg font-medium cursor-pointer" onclick="handleMobileMenu()">
+              <i class="fa-solid fa-xmark text-gray-600"></i>
+            </button>
+          </div>
+          <!-- mobile nav links -->
+          <ul class="mt-8 border-b border-b-gray-200 pb-4">
+            <li class="mb-4">
+              <a href="#" class="block text-xl p-3 hover:bg-gray-100 rounded-lg">Pricing</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="block text-xl p-3 hover:bg-gray-100 rounded-lg">Docs</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="block text-xl p-3 hover:bg-gray-100 rounded-lg">Changelog</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="block text-xl p-3 hover:bg-gray-100 rounded-lg">Blog</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="block text-xl p-3 hover:bg-gray-100 rounded-lg">Login</a>
+            </li>
+          </ul>
+          <!-- developer button -->
+          <button class="px-4 py-2 mt-4 w-full cursor-pointer hover:bg-gray-100 transition rounded-lg text-base flex items-center gap-2">
+            <img src="./Assets/Images/asset 1.svg" alt="dev-icon" />
+            <span class="font-semibold text-headline">Electron Developer</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- javascript files -->
+    <script src="./JavaScripts/app.js"></script>
+  </body>
+</html>
