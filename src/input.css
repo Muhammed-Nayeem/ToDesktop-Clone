@@ -10,3 +10,12 @@
   --color-headerBG: #fafafc;
   --color-headline: #000000;
 }
+
+@layer {
+  .main-container {
+    @apply container max-w-screen-xl mx-auto;
+  }
+  .section-wrapper {
+    @apply py-20 top-[72px] relative from-gray-200 via-purple-100 to-transparent overflow-x-hidden overflow-y-clip;
+  }
+}
